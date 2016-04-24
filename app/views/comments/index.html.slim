@@ -1,0 +1,17 @@
+h1 Comments
+
+= link_to 'New Comment', new_comment_path
+
+- if @comments.any?
+  - @comments.each do |comment|
+    p
+      = comment.user_id
+      = comment.title
+      = comment.body
+      = comment.project_id
+      = link_to 'More', comment_path(comment)
+  end
+- else
+  p
+    | No comments!
+end

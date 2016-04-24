@@ -1,0 +1,25 @@
+p
+  | Name:
+  = @project.name.capitalize
+
+p
+  | Description:
+  = @project.description
+
+p
+  | Goal:
+  = @project.goal
+
+p
+  | Image:
+  = @project.image
+
+p
+  | Video:
+  = @project.video
+
+
+- if @project.user_id == current_user.id
+  = link_to "Edit", edit_project_path(@project)
+end
+= link_to "Projects", projects_path

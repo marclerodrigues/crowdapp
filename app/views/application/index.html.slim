@@ -1,0 +1,61 @@
+div class="gallery autoplay items-3"
+  div id="item-1" class="control-operator"
+  div id="item-2" class="control-operator"
+  div id="item-3" class="control-operator"
+
+  figure class="item"
+    h1
+      | First
+
+  figure class="item"
+    h1
+      | Second
+
+  figure class="item"
+    h1
+      | Third
+
+  div class="controls"
+    a href="#item-1" class="control-button"
+      | •
+    a href="#item-2" class="control-button"
+      | •
+    a href="#item-3" class="control-button"
+      | •
+
+div class="projects-display"
+  div class="projects-top"
+    h2 Popular
+    button id="see-all-btn"
+      | See all
+  div class="projects-content"
+    div class="project"
+      div class="project-image"
+        = image_tag("castle.jpg")
+      div class="project-description"
+        h3 Project Name
+        h5 @Creators
+        div class="short-description"
+          | This is a short descriptions of the project, lorem ipsum.
+        br
+        span class="city"
+          i class="material-icons" room
+          | Teresina, PI
+        div class="meter"
+          span style="width: 65%;" class="progress-bar"
+        br
+        div class="total-funded"
+          p class="total-top"
+            | 65%
+          span class="total-bottom"
+            | funded
+        div class="total-goal"
+          p class="total-top"
+            | R$ 5.000,00
+          span class="total-bottom"
+            | pledge
+        div class="total-days-left"
+          p class="total-top"
+            | 10
+          span class="total-bottom"
+            | days to go

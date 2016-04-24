@@ -1,0 +1,5 @@
+class Comment < ActiveRecord::Base
+  validates :title, :body, :project, :user, presence: true
+  belongs_to :user
+  belongs_to :project
+end

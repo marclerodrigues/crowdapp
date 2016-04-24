@@ -1,0 +1,382 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -250px;
+}
+
+.footer, .push {
+  height: 250px;
+}
+
+.nav {
+  background: #232323;
+  height: 60px;
+  display: inline-block;
+  width: 100%;
+}
+
+.nav li {
+  float: left;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav li a {
+  font-size: 14px;
+  color: white;
+  display: block;
+  line-height: 60px;
+  padding: 0 26px;
+  text-decoration: none;
+  border-left: 1px solid #2e2e2e;
+  font-family: Montserrat, sans-serif;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.nav lia a:hover {
+  background-color: #2e2e2e;
+}
+
+#settings a {
+  padding: 18px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#search {
+  width: 357px;
+  margin: 4px;
+}
+
+#search_text {
+  width: 297px;
+  padding: 15px 0 15px 20px;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  border: 0 none;
+  height: 52px;
+  margin-right: 0;
+  color: white;
+  outline: none;
+  background: #1f7f5c;
+  float: left;
+  box-sizing: border-box;
+  transition: all 0.15s;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-moz-placeholder {
+  color: white;
+}
+
+::-moz-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+#search_text:focus {
+  background: rgb(64,151,119);
+}
+
+#search_button {
+  border: 0 none;
+  background: #1f5f5c url("search.png") center no-repeat;
+  width: 60px;
+  float: left;
+  padding: 0;
+  text-align: center;
+  height: 52px;
+  cursor: pointer;
+}
+
+#options {
+  float: right;
+}
+
+#options a {
+  border-left: 0 none;
+}
+
+#options>a {
+  background-image: url("triangle.png");
+  background-position: 85% center;
+  background-repeat: no-repeat;
+  padding-right: 42px;
+}
+
+.subnav {
+  visibility: hidden;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  width: 200px;
+  height: auto;
+  opacity: 0;
+  transistion: all 0.1s;
+  background: #232323;
+}
+
+.subnav li {
+  float: none;
+}
+
+.subnav li a {
+  border-bottom: 1px solid #2e2e2e;
+}
+
+#options:hover .subnav {
+  visibility: visible;
+  top:100%;
+  opacity: 1;
+}
+
+#login, #signup {
+  float: right;
+}
+
+.projects-display {
+  width: 80%;
+  margin: 25px 0px 25px 100px;
+}
+
+.projects-display #see-all-btn {
+  float: right;
+  margin-top: -34px;
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+  color: white;
+  background: #1f7f5c;
+  border: 0;
+  border-radius: 5px;
+}
+
+.project {
+  margin-top: 15px;
+  width: 275px;
+}
+
+.project-image {
+  height: 175px;
+  border-radius: 7px 7px 0 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px 7px 0 0;
+}
+
+.project-description {
+  border: 1px solid #c8c6c6;
+  border-top: 0;
+  border-radius: 0 0 7px 7px;
+  padding: 5px;
+  font-family: Open Sans, sans-serif;
+  font-size: 12px;
+}
+
+.project-description h3 {
+  font-size: 14px;
+}
+
+.project-description h5 {
+  font-size: 12px;
+  color: #9a9999;
+}
+
+.project-description .short-description {
+  margin: 5px;
+  height: 75px;
+}
+
+.project-description .city i {
+  font-size: 13px;
+  padding-right: 5px;
+}
+
+.project-description .city {
+  margin: 5px;
+}
+
+.project-description .total-funded {
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.project-description .total-goal {
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+}
+
+.project-description .total-days-left {
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+}
+
+.total-top {
+  font-weight: bold;
+}
+
+.total-bottom {
+  color: #9a9999;
+}
+
+
+footer {
+  width: 100%;
+  height: 250px;
+  padding-top: 25px;
+  font-family: Montserrat, sans-serif;
+  background: #232323;
+  color: white;
+}
+
+footer li {
+  list-style-type: none;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.footer-title {
+  font-size: 16px;
+}
+
+.footer-section-1 {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
+
+.footer-section-2 {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-section-3 {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-section-4 {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-section-5 {
+  width: 45%;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.footer-section-6 {
+  width: 40%;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.footer-section-6 ul {
+  float: right;
+}
+
+.meter {
+  height: 10px;
+  position: relative;
+  background: #555;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  margin-top: 5px;
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43,194,83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%;
+    rgb*84,240,84 69%
+  );
+  box-shadow:
+    inset 0 2px 9px rgba(255,255,255, 0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-form {
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.login-form input[type=email], input[type=password] {
+  width:325px;
+  margin: 8px 0;
+  padding: 10px 10px;
+}
+
+.login-form input[type=submit] {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #1f7f5c;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}

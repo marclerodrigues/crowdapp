@@ -1,0 +1,25 @@
+require 'rails_helper'
+
+RSpec.describe Reward, type: :model do
+  let(:project) {FactoryGirl.create(:project, user: FactoryGirl.create(:user))}
+  let(:reward) {FactoryGirl.create(:reward, project: project)}
+  it 'has a valid factory' do
+    expect(reward).to be_valid
+  end
+
+  it 'is invalid without name' do
+    reward.name = nil
+    expect(reward).not_to be_valid
+  end
+
+  it 'is invalid without price' do
+    reward.value = nil
+    expect(reward).not_to be_valid
+  end
+=begin
+  it 'is invalid without project' do
+    reward.project = nil
+    expect(reward).not_to be_valid
+  end
+=end
+end

@@ -1,0 +1,8 @@
+FactoryGirl.define do
+  factory :comment do
+    title "First Comment"
+    body "MyComment"
+    user nil
+    project nil
+  end
+end

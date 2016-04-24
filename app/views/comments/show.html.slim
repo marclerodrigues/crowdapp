@@ -1,0 +1,11 @@
+p
+  = @comment.title
+p
+  = @comment.body
+p
+  = @comment.user_id
+p
+  = @comment.project_id
+
+= link_to 'Edit', edit_comment_path(@comment)
+= link_to 'Comments', comments_path

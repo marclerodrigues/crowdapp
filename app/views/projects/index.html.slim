@@ -1,0 +1,10 @@
+h1 My Projects
+= link_to "New Project", new_project_path
+- if @projects
+  - @projects.each do |project|
+    p
+      = project.name
+      = project.goal
+      = link_to 'See', project_path(project)
+  end
+end

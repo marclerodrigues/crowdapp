@@ -1,0 +1,13 @@
+h1 Projects Rewards
+
+= link_to 'New Reward', new_reward_path
+
+- if @rewards
+  - @rewards.each do |reward|
+    p
+      = reward.name
+      = reward.value
+      = reward.project_id
+      = link_to 'More', reward_path(reward)
+  end
+end

@@ -1,0 +1,19 @@
+= form_for @reward do |f|
+  p
+    = f.label :name
+    = f.text_field :name
+
+  p
+    = f.label :description
+    = f.text_field :description
+
+  p
+    = f.label :value
+    = f.number_field :value, in: 1.0..1000000.0, step: 0.5
+
+  p
+    = f.label :project
+    = f.text_field :project_id
+
+  = f.submit
+end

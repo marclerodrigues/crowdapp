@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+head
+  title
+    | Crowdapp
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+body
+
+  ul class="nav"
+    li id="settings"
+      a href="#"
+        | Patrocina
+    li
+      a href="#"
+        | Discover
+    li
+      a href="#"
+        | Start Project
+    li id="search"
+      form action="" method="get"
+        input type="text" name="search_text" id="search_text" placeholder="Search"
+        input type="button" name="search_button" id="search_button"
+    - if signed_in?
+      li id="options"
+        a href="#"
+          | Options
+          ul class="subnav"
+            li
+              a href="#"
+                | Settings
+            li
+              a href="#"
+                | Application
+            li
+              a href="#"
+                | Board
+            li
+              a href="#"
+                | Options
+    - else
+      li id="signup"
+        a href="#"
+          | Sign up
+      li id="login"
+        a href="#"
+          | Login
+
+  div classs="wrapper"
+    = yield
+
+  footer
+    div class="footer-section-1"
+      ul
+        li class="footer-title"
+          | About us
+        li
+          | What is Patrocina?
+        li
+          | Who we are
+        li
+          | Jobs
+        li
+          | Newsletters
+        li
+          | Github
+    div class="footer-section-2"
+      ul
+        li class="footer-title"
+          | Help
+        li
+          | FAQ
+        li
+          | Our rules
+        li
+          | Creator Handbook
+        li
+          | Support
+        li
+          | Terms of use
+        li
+          | Privacy Policy
+    div class="footer-section-3"
+      ul
+        li class="footer-title"
+          | Discover
+        li
+          | Art
+        li
+          | Games
+        li
+          | Technology
+    div class="footer-section-4"
+      ul
+        li class="footer-title"
+          | Hello
+        li
+          | Blog
+        li
+          | Engineering Blog
+        li
+          | Twitter
+        li
+          | Facebook
+        li
+          | Instagram
+        li
+          | Youtube
+
+    div class="footer-section-5"
+      ul
+        li
+          | Patrocina
+    div class="footer-section-6"
+      ul
+        li
+          | Language

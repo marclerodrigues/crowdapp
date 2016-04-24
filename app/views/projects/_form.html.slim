@@ -1,0 +1,23 @@
+= form_for @project do |f|
+  p
+    = f.label :name
+    = f.text_field :name
+
+  p
+    = f.label :description
+    = f.text_field :description
+
+  p
+    = f.label :goal
+    = f.number_field(:goal, in: 1.0..1000000.0, step: 0.5)
+
+  p
+    = f.label :image
+    = f.text_field :image
+
+  p
+    = f.label :video
+    = f.text_field :video
+
+  = f.submit
+end
