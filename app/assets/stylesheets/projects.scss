@@ -46,11 +46,12 @@
 }
 
 .project-info #back-btn {
-  width: 150px;
-  height: 35px;
-  font-size: 14px;
+  width: 90%;
+  height: 55px;
+  font-size: 16px;
+  font-weight: bold;
   color: white;
-  background: #1f7f5c;
+  background: #00cc66;
   border: 0;
   border-radius: 5px;
   margin: 10px 0 10px 0;
@@ -110,8 +111,6 @@
 .project-navbar {
   width: 100%;
   text-align: center;
-  border-bottom: 5px solid #1f7f5c;
-  margin-bottom: 15px;
 }
 
 .project-navbar ul {
