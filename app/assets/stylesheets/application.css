@@ -141,6 +141,7 @@ html, body {
 }
 
 .subnav {
+  margin-top: -1px;
   visibility: hidden;
   position: absolute;
   top: 110%;
@@ -150,6 +151,7 @@ html, body {
   opacity: 0;
   transistion: all 0.1s;
   background: #232323;
+  z-index: 1;
 }
 
 .subnav li {
@@ -219,6 +221,11 @@ html, body {
 .project-description h5 {
   font-size: 12px;
   color: #9a9999;
+}
+
+.project-description a {
+  text-decoration: none;
+  color: black;
 }
 
 .project-description .short-description {
@@ -356,19 +363,19 @@ footer li {
   overflow: hidden;
 }
 
-.login-form {
+.user-form {
   width: 350px;
   margin: 0 auto;
   margin-bottom: 150px;
 }
 
-.login-form input[type=email], input[type=password] {
+.user-form input[type=email], input[type=password] {
   width:325px;
   margin: 8px 0;
   padding: 10px 10px;
 }
 
-.login-form input[type=submit] {
+.user-form input[type=submit] {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;

@@ -1,25 +1,50 @@
-p
-  | Name:
-  = @project.name.capitalize
+div class="show-project"
+  div class="user-control"
+    - if current_user
+      - if @project.user_id == current_user.id
+        = button_to 'Edit Project', edit_project_path(@project), method: :get
+  div class="project-header"
+    div class="project-title"
+      span
+        = @project.name
+      p
+        | @Creators
+    div class="project-data"
+      = image_tag "html.jpg"
+      p City, ST
+      p = @project.description
+      p Social Share
 
-p
-  | Description:
-  = @project.description
-
-p
-  | Goal:
-  = @project.goal
-
-p
-  | Image:
-  = @project.image
-
-p
-  | Video:
-  = @project.video
-
-
-- if @project.user_id == current_user.id
-  = link_to "Edit", edit_project_path(@project)
-end
-= link_to "Projects", projects_path
+    div class="project-info"
+      div class="show-badge"
+        p 72
+        span backers
+      div class="show-badge"
+        p R$ 5.000,00
+        span pledged of
+        = " R$ " + @project.goal.to_s
+        |  goal
+      div class="show-badge"
+        p 35
+        span days to go
+      button id="back-btn" Back this project
+      p id="disclaimer" This project will only be  founded if at least R$ 10.000,00 is pledged by Fri, May 20 2016 10:54 AM BRT.
+      div class="founders"
+        div class="founders-info"
+          p Founders
+          p class="small-text" 4 Created / 4 Backed
+          p class="small-text" www.site.com.br
+          p
+            a href="#" See full bio
+            a href="#"  Contact me
+        div class="founders-logo"
+          = image_tag("founders.jpg")
+  div class="project-navbar"
+    ul
+      li Rewards
+      li Campaign
+      li Updates
+      li Comments
+  div class="project-rewards"
+    div class="reward"
+  div class="project-content"

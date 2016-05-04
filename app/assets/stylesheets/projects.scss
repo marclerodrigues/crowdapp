@@ -1,3 +1,125 @@
-// Place all the styles related to the Projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.show-project {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-header {
+  height: 600px;
+  margin: 20px 0 25px 0;
+}
+
+.project-title {
+  text-align: center;
+  width: 100%;
+}
+
+.project-title span {
+  font-size: 32px;
+}
+
+.project-data {
+  width: 65%;
+  padding-top: 20px;
+  padding-left: 30px;
+  display: inline-block;
+}
+
+.project-data img {
+  width: 650px;
+  height: 400px;
+}
+
+.project-info {
+  width:30%;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+.show-badge p {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.show-badge span {
+  font-size: 14px
+}
+
+.project-info #back-btn {
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+  color: white;
+  background: #1f7f5c;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
+}
+
+.project-info #disclaimer {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.founders {
+  width: 100%;
+}
+
+.founders-info {
+  width: 45%;
+  display: inline-block;
+}
+
+.founders-logo {
+  width: 45%;
+  display: inline-block;
+  text-align: center;
+}
+
+.founders-info .small-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.founders-info a {
+  text-decoration: none;
+}
+
+.founders-logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+}
+
+.user-control {
+  width: 100%;
+  text-align: center;
+}
+
+.user-control input[type=submit] {
+  width: 150px;
+  height: 35px;
+  font-size: 14px;
+  color: white;
+  background: #1f7f5c;
+  border: 0;
+  border-radius: 3px;
+  margin: 10px 0 10px 0;
+}
+
+.project-navbar {
+  width: 100%;
+  text-align: center;
+  border-bottom: 5px solid #1f7f5c;
+  margin-bottom: 15px;
+}
+
+.project-navbar ul {
+  list-style: none;
+}
+
+.project-navbar ul li {
+  display: inline-block;
+  width: 24%;
+  padding: 10px 0 10px;
+}

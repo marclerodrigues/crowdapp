@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:new, :edit, :create, :destroy, :update]
 
   def index
     @projects = current_user.projects.all

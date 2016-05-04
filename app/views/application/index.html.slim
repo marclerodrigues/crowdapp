@@ -33,7 +33,8 @@ div class="projects-display"
       div class="project-image"
         = image_tag("castle.jpg")
       div class="project-description"
-        h3 Project Name
+        h3
+          = link_to "Project Name", projects_path
         h5 @Creators
         div class="short-description"
           | This is a short descriptions of the project, lorem ipsum.

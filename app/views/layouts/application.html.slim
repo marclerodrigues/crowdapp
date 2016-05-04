@@ -2,7 +2,7 @@
 <html>
 head
   title
-    | Crowdapp
+    | Patrocina - A Crowdfunding application
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
@@ -10,8 +10,7 @@ body
 
   ul class="nav"
     li id="settings"
-      a href="#"
-        | Patrocina
+      = link_to 'Patrocina', root_path
     li
       a href="#"
         | Discover
@@ -28,91 +27,54 @@ body
           | Options
           ul class="subnav"
             li
-              a href="#"
-                | Settings
+              = link_to 'Projects', projects_path
             li
-              a href="#"
-                | Application
-            li
-              a href="#"
-                | Board
-            li
-              a href="#"
-                | Options
+              = link_to 'Sign out', destroy_user_session_path, method: :delete
     - else
       li id="signup"
-        a href="#"
-          | Sign up
+        = link_to 'Sign up', new_user_registration_path
       li id="login"
-        a href="#"
-          | Login
-
+        = link_to 'Login', new_user_session_path
   div classs="wrapper"
     = yield
 
   footer
     div class="footer-section-1"
       ul
-        li class="footer-title"
-          | About us
-        li
-          | What is Patrocina?
-        li
-          | Who we are
-        li
-          | Jobs
-        li
-          | Newsletters
-        li
-          | Github
+        li class="footer-title" About us
+        li What is Patrocina?
+        li Who we are
+        li Jobs
+        li Newsletters
+        li Github
     div class="footer-section-2"
       ul
-        li class="footer-title"
-          | Help
-        li
-          | FAQ
-        li
-          | Our rules
-        li
-          | Creator Handbook
-        li
-          | Support
-        li
-          | Terms of use
-        li
-          | Privacy Policy
+        li class="footer-title" Help
+        li FAQ
+        li Our rules
+        li Creator Handbook
+        li Support
+        li Terms of use
+        li Privacy Policy
     div class="footer-section-3"
       ul
-        li class="footer-title"
-          | Discover
-        li
-          | Art
-        li
-          | Games
-        li
-          | Technology
+        li class="footer-title" Discover
+        li Art
+        li Games
+        li Technology
     div class="footer-section-4"
       ul
-        li class="footer-title"
-          | Hello
-        li
-          | Blog
-        li
-          | Engineering Blog
-        li
-          | Twitter
-        li
-          | Facebook
-        li
-          | Instagram
-        li
-          | Youtube
+        li class="footer-title" Hello
+        li Blog
+        li Engineering Blog
+        li Twitter
+        li Facebook
+        li Instagram
+        li Youtube
 
     div class="footer-section-5"
       ul
-        li
-          | Patrocina
+        li Patrocina
     div class="footer-section-6"
       ul
-        li
-          | Language
+        li Language
