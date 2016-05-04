@@ -149,6 +149,18 @@
   margin-left: 5px;
 }
 
+.project-info-content {
+  margin: 0 auto;
+}
+
+.tabs {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
 .project-campaign {
   width: 720px;
   margin-left: 100px;
@@ -159,16 +171,18 @@
 
 .project-rewards {
   width: 360px;
-  display: inline-block;
   vertical-align: top;
   padding-top: 25px;
+  display: inline-block;
 }
 
 .reward {
-  width: 100%;
+  width: 360px;
   background-color: #f3f3f3;
   border-radius: 10px;
   padding: 25px 15px;
+  margin-bottom: 15px;
+  display: block;
 }
 
 .reward a, .reward a:hover {
@@ -202,4 +216,8 @@
 
 .reward-extra-info {
   font-size: 15px;
+}
+
+.tab-gray {
+  background-color: #f3f3f3;
 }

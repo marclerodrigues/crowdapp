@@ -40,57 +40,94 @@ div class="show-project"
               a href="#"  Contact me
           div class="founders-logo"
             = image_tag("founders.jpg")
-  div class="project-navbar"
+  div id="project-navbar" class="project-navbar"
     ul
       li
-        a href="#" Campaign
+        a href="#campaign" class="tablink" onclick="openTab(event, 'campaign')" Campaign
       li
-        a href="#"
+        a href="#updates" class="tablink" onclick="openTab(event, 'updates')"
           | Updates
           span 2
       li
-        a href="#"
+        a href="#comments" class="tablink" onclick="openTab(event, 'comments')"
           | Comments
           span 2
       li
-        a href="#"
+        a href="#backers" class="tablink" onclick="openTab(event, 'backers')"
           | Backers
           span 2
-  div class="project-campaign"
-    p
-      p
-        | O projeto
+  div class="project-info-content"
+    div id="campaign" class="campaign tabs"
+      div class="project-campaign"
+        p
+          p
+            | O projeto
 
-      p
-        | Pedimos a sua ajuda para realizar um filme baiano e independente! O curta-metragem O Melhor Dia do Ano.
+          p
+            | Pedimos a sua ajuda para realizar um filme baiano e independente! O curta-metragem O Melhor Dia do Ano.
 
-      p
-        | Na história acompanhamos Leo, um garoto de 16 anos recém-completados, na manhã do seu aniversário. Seus pais, um casal divorciado de meia idade, juntam-se para bater um pequeno parabéns em comemoração ao dia do filho. No entanto, em meio a assuntos mal resolvidos e antigos ressentimentos, acabam discutindo, sabotando o aniversário do garoto.
+          p
+            | Na história acompanhamos Leo, um garoto de 16 anos recém-completados, na manhã do seu aniversário. Seus pais, um casal divorciado de meia idade, juntam-se para bater um pequeno parabéns em comemoração ao dia do filho. No entanto, em meio a assuntos mal resolvidos e antigos ressentimentos, acabam discutindo, sabotando o aniversário do garoto.
 
-      p
-        | O Curta-metragem terá algo próximo de 17 minutos
+          p
+            | O Curta-metragem terá algo próximo de 17 minutos
 
-      p
-        | A história destaca alguns problemas de uma parcela da população brasileira; Falta de comunicação entre pais e filhos, dificuldade em lidar com o divórcio dos pais, introspecção e a constante opção desses jovens em desligar-se da realidade que vivem são problemas que vemos no dia a dia da relação entre os filhos e seus pais, e que constantemente não são tratados ou são abordados de maneira superficial ou não verdadeira.
+          p
+            | A história destaca alguns problemas de uma parcela da população brasileira; Falta de comunicação entre pais e filhos, dificuldade em lidar com o divórcio dos pais, introspecção e a constante opção desses jovens em desligar-se da realidade que vivem são problemas que vemos no dia a dia da relação entre os filhos e seus pais, e que constantemente não são tratados ou são abordados de maneira superficial ou não verdadeira.
 
-      p
-        | Bem, até aqui vocês devem estar pensando: "quem são as pessoas que estão me pedindo esse dinheiro?", e é importante que vocês conheçam, então, a equipe responsável por fazer O Melhor Dia do Ano acontecer.
-  div class="project-rewards"
-    div class="reward"
-      a href="#"
-        div class="reward-info"
-          h2 Pledge $10 or more
-          p class="badge"
-            span
-            | 2 backers
-          div class="reward-description"
-            p
-              | Reward description lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          div class="reward-extra-info"
-            p class="pledge-estimated"
-              | Estimated-delivery
-            p class="pledge-estimated-data"
-              | May 2016
+          p
+            | Bem, até aqui vocês devem estar pensando: "quem são as pessoas que estão me pedindo esse dinheiro?", e é importante que vocês conheçam, então, a equipe responsável por fazer O Melhor Dia do Ano acontecer.
+      div class="project-rewards"
+        - 3.times
+          div class="reward"
+            a href="#"
+              div class="reward-info"
+                h2 Pledge $10 or more
+                p class="badge"
+                  span
+                  | 2 backers
+                div class="reward-description"
+                  p
+                    | Reward description lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                div class="reward-extra-info"
+                  p class="pledge-estimated"
+                    | Estimated-delivery
+                  p class="pledge-estimated-data"
+                    | May 2016
+
+    div id="updates" class="tabs hide"
+      ul
+        li
+          div
+            h1 Update
+            | updates updates updates
+        li
+          div
+            h1 Update
+            | updates updates updates
+        li
+          div
+            h1 Update
+            | updates updates updates
+        li
+          div
+            h1 Update
+            | updates updates updates
+        li
+          div
+            h1 Update
+            | updates updates updates
+        li
+          div
+            h1 Update
+            | updates updates updates
 
 
+
+
+
+    div id="comments" class="tabs hide"
+      h1 Comments
+    div id="backers" class="tabs hide"
+      h1 Backers
 
