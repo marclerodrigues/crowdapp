@@ -1,11 +1,17 @@
 .show-project {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin-top: -5px;
 }
 
 .project-header {
   height: 600px;
-  margin: 20px 0 25px 0;
+  padding: 20px 0 25px 0;
+  background-color: #f3f3f3;
+}
+
+.project-top {
+  width: 1300px;
+  margin: 0 auto;
 }
 
 .project-title {
@@ -18,7 +24,7 @@
 }
 
 .project-data {
-  width: 65%;
+  width: 800px;
   padding-top: 20px;
   padding-left: 30px;
   display: inline-block;
@@ -30,10 +36,11 @@
 }
 
 .project-info {
-  width:30%;
+  width:375px;
   display: inline-block;
   vertical-align: top;
   padding-top: 20px;
+
 }
 
 .show-badge p {
@@ -109,8 +116,10 @@
 }
 
 .project-navbar {
-  width: 100%;
+  width: 750px;
+  height: 35px;
   text-align: center;
+  margin-left: 100px;
 }
 
 .project-navbar ul {
@@ -119,6 +128,78 @@
 
 .project-navbar ul li {
   display: inline-block;
-  width: 24%;
-  padding: 10px 0 10px;
+  width: 175px;
+  padding: 15px 0 15px;
+}
+
+.project-navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-navbar ul li a:hover {
+  border-bottom: 3px solid #2BDE73;
+  padding: 5px 25px;
+}
+
+.project-navbar ul li a span {
+  background-color: #e3e3e3;
+  font-size: 12px;
+  padding: 3px 3px;
+  margin-left: 5px;
+}
+
+.project-campaign {
+  width: 720px;
+  margin-left: 100px;
+  padding: 25px 25px;
+  line-height: 1.5em;
+  display: inline-block;
+}
+
+.project-rewards {
+  width: 360px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 25px;
+}
+
+.reward {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  padding: 25px 15px;
+}
+
+.reward a, .reward a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.reward:hover {
+  background-color: #00cc66;
+}
+
+.reward h2 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.reward .badge {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.reward-description {
+  font-size: 15px;
+  height: 55px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.reward-extra-info {
+  font-size: 15px;
 }

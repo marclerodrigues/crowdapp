@@ -365,7 +365,8 @@ footer li {
 
 .user-form {
   width: 350px;
-  margin: 0 auto;
+  height: 340px;
+  margin: 35px auto;
   margin-bottom: 150px;
 }
 
